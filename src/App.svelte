@@ -2,49 +2,75 @@
   export let name0;
 </script>
 
-<svelte:head>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-    crossorigin="anonymous"
-  />
-
-  <link
-    href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
-    rel="stylesheet"
-  />
-</svelte:head>
+<svelte:head />
 
 <main>
   <div class="nes-container with-title is-centered">
     <p class="title">Project Eyes Only</p>
     <h1>For Your Eyes Only</h1>
     <p>The official character sheet.</p>
+
+    <div class="container">
+      <div class="item nes-field">
+        <label for="name_field">Player Name</label>
+        <input
+          type="text"
+          id="name_field"
+          class="nes-input"
+          placeholder="ChessMaster48"
+        />
+      </div>
+      <div class="item nes-field">
+        <label for="name_field">Player Tags</label>
+        <input
+          type="text"
+          id="name_field"
+          class="nes-input"
+          placeholder="For Campaign: L.O.L Surprise! Version 1"
+        />
+      </div>
+    </div>
   </div>
 
-  <div class="row">
-    <div class="col-sm nes-field">
-      <label for="name_field">Player Name</label>
-      <input type="text" id="name_field" class="nes-input" />
-    </div>
+  <div class="container">
+    <div class="nes-container with-title is-centered">
+      <p class="title">Basic Character Information</p>
+      <div class="container">
+        <div class="item nes-field">
+          <label for="name_field">First Name</label>
+          <input
+            type="text"
+            id="name_field"
+            class="nes-input"
+            placeholder="Elizabeth"
+          />
+        </div>
 
-    <div class="col-sm nes-field">
-      <label for="name_field">Character Name</label>
-      <input type="text" id="name_field" class="nes-input" />
+        <div class="item nes-field">
+          <label for="name_field">Last Name</label>
+          <input
+            type="text"
+            id="name_field"
+            class="nes-input"
+            placeholder="Harmon"
+          />
+        </div>
+
+        <div class="item nes-field">
+          <label for="name_field">Nickname</label>
+          <input
+            type="text"
+            id="name_field"
+            class="nes-input"
+            placeholder="Beth"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </main>
 
 <style>
-  main {
-    display: grid;
-    text-align: center;
-    padding: 1em;
-    /* max-width: 240px; */
-    margin: 0 auto;
-  }
-
   h1 {
     color: #ff3e00;
     font-size: 2em;

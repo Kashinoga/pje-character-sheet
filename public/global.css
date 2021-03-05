@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+main {
+  text-align: center;
+  margin: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.item {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.nes-input,
+.nes-textarea {
+  border-image-outset: 1 !important;
+}
+
 /* html, body {
 	position: relative;
 	width: 100%;
